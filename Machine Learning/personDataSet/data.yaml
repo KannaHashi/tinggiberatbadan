@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Person']
+
+roboflow:
+  workspace: person-jaoyb
+  project: person-detection-2-ms1yv
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/person-jaoyb/person-detection-2-ms1yv/dataset/1
