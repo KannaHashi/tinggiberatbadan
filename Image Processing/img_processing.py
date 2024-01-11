@@ -7,7 +7,7 @@ frameHeight = 360
 
 imgPath = "D:/Projects/PyCharm/tinggiberatbadan/Machine Learning/dataset_img"
 # img = cv2.imread(r"D:\Projects\PyCharm\tinggiberatbadan\Machine Learning\dataset_img\test.jpg")
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("http://172.20.10.2:81/stream")
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 
@@ -19,7 +19,7 @@ def empty(a):
   pass
 
 cv2.namedWindow("Parameters")
-cv2.resizeWindow("Parameters", 480, 144)
+cv2.resizeWindow("Parameters", 280, 144)
 cv2.createTrackbar("Threshold1", "Parameters", 45, 255, empty)
 cv2.createTrackbar("Threshold2", "Parameters", 40, 255, empty)
 cv2.createTrackbar("Area", "Parameters", 40, 2000, empty)
